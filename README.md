@@ -1,5 +1,28 @@
 # Auditoria de Performance Comercial — Rede Varejista
 
+![SQL](https://img.shields.io/badge/SQL-MySQL-blue) ![Excel](https://img.shields.io/badge/Excel-Reconciliação-green) ![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
+
+> Projeto de análise de dados baseado no dataset público **Superstore**. Auditoria de rentabilidade comercial que identifica onde a empresa perde dinheiro e por quê.
+
+
+## Principais Achados
+
+- Correlação de **-0,86** entre desconto e margem — acima de **21% de desconto**, a operação entra no prejuízo.
+- As subcategorias **Tables** e **Bookcases** destroem margem por excesso de desconto; **Supplies** dá prejuízo mesmo com desconto baixo (problema de custo, não de preço).
+- Região **Central** parece a pior, mas o problema é só Texas e Illinois — Michigan e Indiana (mesma região) têm margem acima de 32%.
+- Corte cego de 20% do catálogo eliminaria 65 produtos lucrativos; o corte correto é de **16,48% (305 SKUs)**.
+
+
+## Índice
+- [Contexto](#contexto)
+- [Stack e Fluxo de Trabalho](#stack-e-fluxo-de-trabalho)
+- [Metodologia](#metodologia)
+- [1. Categorias e subcategorias deficitárias](#1-quais-categorias-e-subcategorias-dão-prejuízo-mesmo-tendo-volume-de-vendas-alto-por-quê-isso-acontece)
+- [2. Correlação desconto x margem](#2-existe-correlação-entre-nível-de-desconto-aplicado-e-queda-de-margem-a-partir-de-que-faixa-de-desconto-a-operação-começa-a-perder-dinheiro)
+- [3. Performance regional](#3-quais-estadosregiões-são-mais-lucrativos-e-quais-consistentemente-destroem-margem)
+- [4. Corte de catálogo](#4-se-a-empresa-tivesse-que-cortar-20-do-catálogo-por-baixa-rentabilidade-quais-produtossubcategorias-entrariam-na-lista)
+
+
 ## Contexto
 Análise de viabilidade comercial e rentabilidade desenvolvida para diagnosticar gargalos operacionais em categorias, regiões e estratégias de preço de uma rede varejista de médio porte. O foco principal é identificar as causas-raiz da destruição de margem de lucro e embasar decisões táticas de saneamento de portfólio e política de descontos.
 
@@ -144,3 +167,14 @@ Ao ordenar os 370 piores produtos por lucro acumulado, identificou-se uma falha 
 * **Recomendação:** 
   1. **Descontinuação Imediata:** Eliminar os **299 SKUs com prejuízo consolidado** e os **6 SKUs sem contribuição positiva de lucro**
   2. **Preservação de Receita:** Blindar os 65 produtos lucrativos que seriam erroneamente eliminados pela regra arbitrária.
+
+  ## Conclusão Geral
+
+A auditoria mostra que o problema de rentabilidade da rede não é estrutural nem geográfico — é uma questão de **governança de descontos**. Travar concessões acima de 20% e substituir o corte cego de catálogo por um critério baseado em lucro real evitaria a eliminação de produtos saudáveis e estancaria a maior parte da sangria de caixa identificada.
+
+  ---
+
+## Sobre
+
+Pietra Viegas — Análise de Dados
+eipiviegas@gmail.com | [LinkedIn](https://www.linkedin.com/in/pietra-viegas-581544309/)
