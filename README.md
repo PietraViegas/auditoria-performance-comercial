@@ -174,4 +174,5 @@ Ao ordenar os 370 piores produtos por lucro acumulado, identificou-se uma falha 
 ## Sobre
 
 Pietra Viegas — Análise de Dados
+
 📧 eipiviegas@gmail.com | 💼 [LinkedIn](https://www.linkedin.com/in/pietra-viegas-581544309/)
