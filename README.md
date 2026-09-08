@@ -168,13 +168,10 @@ Ao ordenar os 370 piores produtos por lucro acumulado, identificou-se uma falha 
   1. **Descontinuação Imediata:** Eliminar os **299 SKUs com prejuízo consolidado** e os **6 SKUs sem contribuição positiva de lucro**
   2. **Preservação de Receita:** Blindar os 65 produtos lucrativos que seriam erroneamente eliminados pela regra arbitrária.
 
-  ## Conclusão Geral
-
-A auditoria mostra que o problema de rentabilidade da rede não é estrutural nem geográfico — é uma questão de **governança de descontos**. Travar concessões acima de 20% e substituir o corte cego de catálogo por um critério baseado em lucro real evitaria a eliminação de produtos saudáveis e estancaria a maior parte da sangria de caixa identificada.
 
   ---
 
 ## Sobre
 
 Pietra Viegas — Análise de Dados
-eipiviegas@gmail.com | [LinkedIn](https://www.linkedin.com/in/pietra-viegas-581544309/)
+📧 eipiviegas@gmail.com | 💼 [LinkedIn](https://www.linkedin.com/in/pietra-viegas-581544309/)
